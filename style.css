@@ -1,0 +1,336 @@
+@import "style_components.css";
+
+.banner {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    background-size: cover;
+}
+
+.h1_home {
+    height: 60px;
+    margin-top: 410px;
+    color: #DAF0F1;
+}
+
+.section-home {
+    height: 961px;
+    position: relative;
+}
+
+.img_1 {
+    position: absolute;
+    top: 150px;
+}
+
+.img_2 {
+    position: absolute;
+    top: 420px;
+    left: 29%;
+}
+
+.img_3 {
+    position: absolute;
+    top: 220px;
+    left: 29.5%;
+}
+
+@media only screen and (min-width: 1390px){
+    .h2-testo {
+        margin-top:325px;
+    }
+}
+
+@media only screen and (max-width: 1389px){
+    .h2-testo {
+        margin-top:100px;
+    }
+}
+
+.section-home-2 {
+    background-color: #416C70;
+    height: 902px;
+    position: relative;
+}
+
+@media only screen and (max-width: 1440px) {
+    .section-home-2 {
+        position: relative;
+    }
+
+    #ghost1{
+        position: absolute;
+        top: 150px;
+    }
+
+    #ghost2{
+        position:absolute;
+        top: 352px;
+        right: 27.7%;
+    }
+
+    #ghost3 {
+        position: absolute;
+        right: 5%;
+        top: 206px;
+    }
+
+    #casa_rossa{
+        position:absolute;
+        top: 158px;
+        left: 52.5%;
+    }
+}
+
+@media only screen and (min-width: 1441px){
+    .section-home-2-img {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #ghost1 {
+        margin-top: 150px;
+    }
+
+    #ghost2 {
+        position: relative;
+        margin-top: 352px;
+    }
+
+    #ghost3 {
+        margin-top: 206px;
+    }
+
+    #casa_rossa {
+        position: absolute;
+        top: 158px;
+    }
+}
+
+
+.h1_laserie {
+    height: 60px;
+    margin-top: 281px;
+}
+
+.anchor_menu {
+    position: fixed;
+    top: 302px;
+    left: 80%;
+    bottom: 680px;
+    z-index: 1;
+    border: #DAF0F1 solid 1px;
+    width: 200px;
+    height: 277px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#trama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 775px;
+    background: url("assets/img_la_serie/Trama.jpg");
+    background-size: cover;
+}
+.riquadro {
+    margin-top: 187px;
+    width: 51.1%;
+    height: 400px;
+    border: #DAF0F1 solid 1px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 55px;
+}
+
+.riquadro h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.riquadro p {
+    margin-top: 20px;
+    padding: 0;
+    text-shadow: -1px 0 #1F3335, 0 1px #1F3335, 1px 0 #1F3335, 0 -1px #1F3335;
+}
+
+#ilcast{
+    background-image: url('assets/img_la_serie/Banner_2.jpg');
+    text-align: center;
+}
+
+#ilcast h2{
+    color: #DAF0F1;
+    margin-top: 445px;
+    text-align: center;
+}
+
+.cast{
+    background-image: linear-gradient(to right, #C1D9DB , #416C70);
+    height: 5777px;
+}
+
+.attore {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+}
+
+@media only screen and (min-width: 1200px){
+    .targhetta {
+        display: block;
+        position: absolute;
+        width: 412px;
+        z-index: 1;
+        background-color: #416C70;
+        height: 208px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .targhetta {
+        display: block;
+        position: absolute;
+        width: 412px;
+        z-index: 1;
+        background-color: #416C70;
+        height: 208px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        top: 350px;
+    }
+}
+
+.container {
+    height: 876px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Olivia {
+    display: block;
+    background-color: #416C70;
+    width: 412px;
+    height: 208px;
+    margin: 50px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.curiosita {
+    background-color: #C1D9DB;
+    height: 1808px;
+}
+
+#curiosita {
+    margin: 150px 10% 150px 0;
+}
+
+.specchietto {
+    position: relative;
+    background-color: #416C70;
+    height: 580px;
+    border: #000000 solid 2px;
+    padding: 46px 4% 0 4%;
+    margin-right: -2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.specchietto img{
+    max-width: 100%;
+    height: auto;
+}
+
+.specchietto h3{
+    margin: 40px 0 0 0;
+    align-items: start;
+}
+
+.specchietto p{
+    margin: 20px 0 0 0;
+    max-width: 270px;
+}
+
+.specchietto > .button\/_base {
+    position: absolute;
+    top: 480px;
+}
+
+
+.curiosita_content {
+    display: flex;
+    justify-content: space-around;
+}
+
+main{
+    background-color: #C1D9DB;
+}
+
+.slider-wrapper {
+    position: relative;
+    margin:0 0 50px 21%;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    max-width: 100%;
+    height: auto;
+}
+
+.slider-nav {
+    padding-top: 50px;
+    height: 513px;
+    background-color: #416C70;
+}
+
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slide img{
+    max-width: 100%;
+    height: auto;
+}
+
+.slide a{
+    opacity: 0.5;
+}
+
+.slide a:hover{
+    opacity: 1;
+}

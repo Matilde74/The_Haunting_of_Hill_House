@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+@font-face {
+    font-family: "NocturneSerif";
+    src: url("assets/Font/Nocturne Serif Test/NocturneSerifTest-Regular-uploaded-63b633de2e1c7.otf");
+}
+
+@font-face {
+    font-family: "NocturneSerif_bold";
+    src: url("assets/Font/Nocturne Serif Test/NocturneSerifTest-Bold.otf");
+}
+
+@font-face {
+    font-family: "NocturneSerif_semi";
+    src: url("assets/Font/Nocturne Serif Test/NocturneSerifTest-SemiBold-uploaded-63b633de3d9aa.otf");
+}
+
+@font-face {
+    font-family: "ZenKaku";
+    src: url("assets/Font/Zen Kaku Gothic Antique/ZenKakuGothicAntique-Regular.ttf");
+}
+
+@font-face {
+    font-family: "ZenKaku_bold";
+    src: url("assets/Font/Zen Kaku Gothic Antique/ZenKakuGothicAntique-Bold.ttf");
+}
+
+body {
+    margin:0;
+}
+
+header {
+    display: block;
+    height: 280px;
+    background-color: #213342;
+    font-family: 'NocturneSerif', 'Time New Roman', serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #DAF0F1;
+    padding: 0;
+    margin:0;
+
+}
+
+#navbar{
+    height:280px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav ul {;
+    height: 205px;
+    max-width: 622px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin-right: 80px;
+}
+
+
+header a{
+    text-decoration: none;
+    color: #DAF0F1;
+
+}
+
+header a:hover{
+    color: #DAF0F1;
+    text-shadow: -1px 0 #AB403D, 0 1px #AB403D, 1px 0 #AB403D, 0 -1px #AB403D;
+}
+
+
+#active {
+    display: flex;
+    background: url("assets/img_Home/Porta.svg") center no-repeat;
+    width: 120px;
+    height: 200px;
+    background-size: contain;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+    font-family: 'NocturneSerif_bold', 'Time New Roman', serif;
+    font-size: 48px;
+    color: #1F3335;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'NocturneSerif_bold', 'Time New Roman', serif;
+    font-size: 40px;
+    color: #1F3335
+}
+
+h3 {
+    font-family: 'NocturneSerif_bold', 'Time New Roman', serif;
+    font-size: 32px;
+    color: #DAF0F1;
+    text-transform: capitalize;
+}
+
+p {
+    font-family: 'ZenKaku', 'Tahoma', sans-serif ;
+    font-size: 16px;
+    color: #363A3E;
+}
+
+.pretitle {
+    font-family: 'NocturneSerif_semi', 'Time New Roman', serif;
+    font-size: 24px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #DAF0F1;
+    margin: 37px 0 0 0;
+}
+
+.button\/_base {
+    width: fit-content;
+    height: 43px;
+    border-radius: 5px;
+    background-color: #213342;
+    text-align: center;
+    border: 1px #DAF0F1 solid;
+    box-shadow: 0 4px 4px 0 rgba(33, 51, 66, 0.25), 0 4px 4px 0 rgba(33, 51, 66, 0.25);
+}
+
+.button\/_base a {
+    font-family: 'NocturneSerif', 'Time New Roman', serif;
+    text-decoration: underline;
+    color: #DAF0F1;
+    font-size: 24px;
+    line-height: 43px;
+    margin: 20px;
+}
+
+.button\/_base:hover{
+    background-color: #AB403D;
+}
+
+footer{
+    background-color: #213342;
+    height: 680px;
+}
+
+.logo{
+    margin-top: 150px;
+}
+
+.icone{
+    color: #DAF0F1;
+    width: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-style: solid;
+    border-right: 2px #DAF0F1;
+    border-left: 2px #DAF0F1;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.menu_footer {
+    border-left: 3px #DAF0F1 solid;
+    margin-top:150px;
+}
+
+.menu_footer a{
+    text-decoration: none;
+    font-family: "NocturneSerif_semi", "Time New Roman", serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #DAF0F1;
+}
+
+ul{
+    padding-left:15px;
+}
+
+footer li{
+    list-style-type: none;
+    padding-bottom: 35px;
+}
+
+.menu_footer a:hover{
+    color: #AB403D;
+    text-shadow: -1px 0 #DAF0F1, 0 1px #DAF0F1, 1px 0 #DAF0F1, 0 -1px #DAF0F1;
+}
+
+.menu_footer li:nth-child(n+3):nth-child(-n+5){
+    text-indent: 20px;
+}
+
+.menu_footer li:nth-child(n+3):nth-child(-n+5)::before {
+    content: url("assets/img_home/Arrow.svg");
+}
+
